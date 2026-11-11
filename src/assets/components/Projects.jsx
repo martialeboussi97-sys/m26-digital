@@ -7,7 +7,10 @@ function Projects() {
     description:
       "Une expérience digitale immersive imaginée pour un établissement hôtelier de luxe au charme méditerranéen.",
     image: "/images/maison-aveline.png",
-    link: "#contact",
+    
+  link:"https://maison-aveline-tau.vercel.app/"
+
+
   },
   {
     number: "02",
@@ -68,7 +71,9 @@ function Projects() {
               <span className="project-category">{project.category}</span>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <a href={project.link}>Découvrir le projet ↗</a>
+             <a href={project.link} target="_blank" rel="noopener noreferrer">
+  Découvrir le projet ↗
+</a>
             </div>
           </article>
         ))}
